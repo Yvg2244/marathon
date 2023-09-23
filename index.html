@@ -13,11 +13,48 @@
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
 
-<body class="is-boxed has-animations">
+<body class="is-boxed  has-animations">
     <div class="body-wrap boxed-container">
         <header class="site-header">
             <div class="container">
-                <div class="site-header-inner">
+                <div class="nav site-header-inner">
+                    <input type="checkbox" id="nav-check">
+                    <div class="nav-header">
+                        <div class="brand header-brand" style="display: flex; gap: 1rem">
+                            <h1 class="m-0">
+                                <a href="#">
+                                    <img style="
+                                                max-height: 2rem;
+                                                border-radius: 50%;
+                                            " class="header-logo-image asset-light" src="src/images/navimages.png"
+                                        alt="Logo" />
+                                </a>
+                            </h1>
+                            <h1 class="m-0">
+                                <a href="#">
+                                    <img style="max-height: 2rem" class="header-logo-image asset-light"
+                                        src="src/images/bank.png" alt="Logo" />
+                                </a>
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="nav-btn">
+                        <label for="nav-check">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </label>
+                    </div>
+
+                    <div class="nav-links">
+                        <a href="/about.html" target="_blank">About Us</a>
+                        <a href="#race">Race Categories</a>
+                        <a href="" >Results</a>
+                        <a href="/media.html">Meida Gallery</a>
+
+                    </div>
+                </div>
+                <!-- <div class="site-header-inner">
                     <div class="brand header-brand" style="display: flex; gap: 1rem">
                         <h1 class="m-0">
                             <a href="#">
@@ -34,7 +71,7 @@
                             </a>
                         </h1>
                     </div>
-                </div>
+                </div> -->
             </div>
         </header>
 
@@ -44,7 +81,7 @@
                     <div class="hero-inner">
                         <div class="hero-copy">
                             <h1 class="hero-title mt-0">
-                                Date: 25th September 2023
+                                RACE DAY: 25th September 2023
                             </h1>
                             <p class="hero-paragraph">
                                 Venue: Sampurnanand Sanskrit University,
@@ -130,64 +167,53 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="features-wrap">
-                            <div class="feature is-revealing">
-                                <div class="feature-inner">
-                                    <div class="feature-icon">
-                                        <img class="asset-light" src="dist/images/feature-01-light.svg"
-                                            alt="Feature 01" />
-                                        <img class="asset-dark" src="dist/images/feature-01-dark.svg"
-                                            alt="Feature 01" />
+                        <h2 style="text-align: center; margin: 20px 0px;" id="race" class="section-title mt-0">
+                            Race Categories
+                        </h2>
+                        <div class="category">
+                            <div class="card">
+                                <div class="card-info">
+                                    <div class="badge">
+                                        <span >5 km</span>
                                     </div>
-                                    <div class="feature-content">
-                                        <h3 class="feature-title mt-0">
-                                            RUN FOR FUN
-                                        </h3>
-                                        <p class="text-sm mb-0">
-                                            Winner: 21,000 | 1st Runner-Up:
-                                            15,000 | | 2nd Runner-Up: 10,000
-                                        </p>
+                                    <div class="card-title">
+                                        Run For <br> FUN
+                                    </div>
+                                    <div class="card-subtitle">
+                                        Winner: 11,000<br>1st Runner-Up: 5,000 <br>2nd Runner-Up: 2,100
                                     </div>
                                 </div>
                             </div>
-                            <div class="feature is-revealing">
-                                <div class="feature-inner">
-                                    <div class="feature-icon">
-                                        <img class="asset-light" src="dist/images/feature-02-light.svg"
-                                            alt="Feature 02" />
-                                        <img class="asset-dark" src="dist/images/feature-02-dark.svg"
-                                            alt="Feature 02" />
+
+
+                            <div class="card">
+                                <div class="card-info">
+                                    <div class="badge">
+                                        <span >10 km</span>
                                     </div>
-                                    <div class="feature-content">
-                                        <h3 class="feature-title mt-0">
-                                            RUN FOR PROGRESS
-                                        </h3>
-                                        <p class="text-sm mb-0">
-                                            Winner: 21,000 | 1st Runner-Up:
-                                            15,000 | | 2nd Runner-Up: 10,000
-                                        </p>
+                                    <div class="card-title">
+                                       Run For<br> Progress
+                                    </div>
+                                    <div class="card-subtitle">
+                                        Winner: 21,000<br>1st Runner-Up: 15,000 <br>2nd Runner-Up: 10,,000
                                     </div>
                                 </div>
                             </div>
-                            <div class="feature is-revealing">
-                                <div class="feature-inner">
-                                    <div class="feature-icon">
-                                        <img class="asset-light" src="dist/images/feature-03-light.svg"
-                                            alt="Feature 03" />
-                                        <img class="asset-dark" src="dist/images/feature-03-dark.svg"
-                                            alt="Feature 03" />
+
+                            <div class="card">
+                                <div class="card-info">
+                                    <div class="badge">
+                                        <span >21 km</span>
                                     </div>
-                                    <div class="feature-content">
-                                        <h3 class="feature-title mt-0">
-                                            RUN FOR VICTORY
-                                        </h3>
-                                        <p class="text-sm mb-0">
-                                            Winner: 11,000 | 1st Runner-Up:
-                                            5,000 | | 2nd Runner-Up: 2,100
-                                        </p>
+                                    <div class="card-title">
+                                       Run For<br> Victory
+                                    </div>
+                                    <div class="card-subtitle">
+                                        Winner: 1,00,000<br>1st Runner-Up: 75,000 <br>2nd Runner-Up: 51,000
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -195,8 +221,8 @@
 
             <section class="cta section">
                 <div class="container-sm">
-                    <h2 style="text-align: center" class="section-title mt-0">
-                        Media Parter
+                    <h2 style="text-align: center; margin: 20px 0px;" class="section-title mt-0">
+                        Sponsers and Partner
                     </h2>
                     <div class="media-partner">
                         <div class="media-card">
@@ -216,7 +242,32 @@
                             </div>
                         </div>
                     </div>
+                    <div class="media-partner">
+                        <div class="media-card">
+
+                            <div class="media-image" style="display: flex; justify-content: center ;">
+                                <img src="src/images/navimages.png"
+                                    style="border-radius:50%; height: 4rem; margin: 10px 0px;"
+                                    alt="Entertainement partner" />
+                            </div>
+                            <h4 style="text-align: center" class="section-title mt-0">
+                                Title Sponser
+                            </h4>
+                        </div>
+                        <div class="media-card">
+
+                            <div class="media-image" style="display: flex; justify-content: center ;">
+                                <img src="src/images/navimages.png"
+                                    style="border-radius:50%;  height: 4rem; margin: 10px 0px;"
+                                    alt="Entertainement partner" />
+                            </div>
+                            <h4 style="text-align: center" class="section-title mt-0">
+                                Title Sponser
+                            </h4>
+                        </div>
+                    </div>
                     <div class="cta-inner section-inner">
+
                         <div class="cta-header text-center">
                             <div class="card-div">
                                 <div class="card">
@@ -272,6 +323,8 @@
                         </div>
                     </div>
                 </div>
+
+
             </section>
         </main>
 
@@ -299,18 +352,18 @@
                             <a href="#">Contact</a>
                         </li>
                         <li>
-                            <a href="#">About us</a>
+                            <a href="https://www.utkarsh.bank/about-us/" target="_blank">About us</a>
                         </li>
                         <li>
                             <a href="#">FAQ's</a>
                         </li>
                         <li>
-                            <a href="#">Support</a>
+                            <a href="https://www.utkarsh.bank/help-and-support/" target="_blank">Support</a>
                         </li>
                     </ul>
                     <ul class="footer-social-links list-reset">
                         <li>
-                            <a href="#">
+                            <a href="https://www.facebook.com/utkarshbankonline/" target="_blank">
                                 <span class="screen-reader-text">Facebook</span>
                                 <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -320,7 +373,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="https://www.twitter.com/Utkarshbank" target="_blank">
                                 <span class="screen-reader-text">Twitter</span>
                                 <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
                                     <path
